@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задачи от ИНТЕРВОЛГА</title>
+  <!-- Подключение CSS стилей Flatpickr -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">Header</header>
+    <main class="main">
+      <form class="form" id="transportForm" action="#">
+        <div class="form__head">
+          <h1 class="form__title">Транспортные средства и водители</h1>
+        </div>
+        <div class="form__rows">
+          <div class="form__row">
+            <label class="form__label" for="gosNumber">Гос-номер</label>
+            <input class="form__input form__input--uppercase" id="gosNumber" type="text"
+              placeholder="Укажите го-номер (А000АА)">
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="vehicles">Транспортные средства</label>
+            <input class="form__input" id="vehicles" type="text" placeholder="Транспортные средства">
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="date">Ориентировачная дата прибытия к покупателю</label>
+            <input class="form__input form__input--icon" id="date" type="text" placeholder="Дата*">
+            <img class="form__icon" width="24" height="24" src="./img/calendar.svg" alt="calendar icon">
+          </div>
+        </div>
+
+        <div class="form__rows">
+          <h2 class="form__subtitle">Данные о водителе</h2>
+          <div class="form__row">
+            <label class="form__label" for="FullName">ФИО</label>
+            <input class="form__input" id="FullName" type="text" placeholder="Укажите ФИО водителя">
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="seriaPassport">Паспортные данные</label>
+
+            <div class="form__columns">
+              <input class="form__input" maxlength="4" id="seriaPassport" type="number" placeholder="Серия">
+              <input class="form__input" maxlength="6" id="numberPassport" type="number" placeholder="Номер">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="">Кем выдан</label>
+            <input class="form__input" type="text" placeholder="Кем выдан">
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="whenIssued">Когда выдан</label>
+            <input class="form__input" id="whenIssued" type="text" placeholder="Когда выдан">
+          </div>
+        </div>
+
+        <div class="form__btns">
+          <button type="submit" class="form__btn btn-primary">Отправить</button>
+          <button type="reset" class="form__btn btn-secondary">Отменить</button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">Footer</footer>
+  </div>
+
+  <!-- Подключение JavaScript библиотеки Flatpickr -->
+  <!-- Подключение JavaScript библиотеки Flatpickr -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
